@@ -17,8 +17,6 @@ export class UserController {
 
 	// means we are creating something
 	@Post()
-		// @Req() is used to access the request object 
-		// : Request is used to specify the var request type
 		store(@Body() createUserDto: CreateUserDto) {
 			return (this.userService.create(createUserDto));
 		}
